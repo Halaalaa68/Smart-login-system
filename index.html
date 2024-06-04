@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-evenly align-items-center vh-100 flex-wrap">
+        <div class="col-md-6 col-12">
+            <h1 class="text-center">Smart Login System</h1>
+            <h6 class="text-center">Don’t have an account? <a href="signup.html">Sign Up</a></h6>
+        </div>
+        <div class="form w-50 h-50 p-5 shadow rounded-2 col-md-6 col-12">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="userPassword">
+            </div>
+            <!-- <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-outline-dark" id="login">Login</button>
+            <p class="d-none text-danger" id="wrong-pass">Password isn't correct</p>
+            <p class="d-none text-danger" id="noaccount">Account doesn't exist</p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

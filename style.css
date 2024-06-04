@@ -1,0 +1,18 @@
+body{
+    /* background-color: #DAD3BE; */
+    background-image: linear-gradient(#dad3be4b,#dad3be4b),url(background-realistic-abstract-technology-particle_23-2148431735.avif) ;
+    background-size: cover;
+}
+.form{
+    background-color: #6B8A7A;
+}
+h1, h6{
+    color: #212529;
+}
+a{
+    color: #254336;
+}
+.navbar-brand{
+    color: #618264;
+    font-weight: 700;
+}

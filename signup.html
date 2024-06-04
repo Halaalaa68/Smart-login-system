@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-evenly align-items-center vh-100 flex-wrap">
+        <div class="col-md-6 col-12">
+            <h1 class="text-center">Smart Login System</h1>
+            <h6 class="text-center">Have an account? <a href="index.html">Login</a></h6>
+        </div>
+        <div class="form w-50 p-5 shadow rounded-2 col-md-6 col-12">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" id="userName" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+              <p class="d-none text-danger" id="valide">Please enter a valid Email</p>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="userPassword">
+              <p class="d-none text-danger" id="validp">Please enter a strong password</p>
+            </div>
+            <!-- <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+            <button type="submit" class="btn btn-outline-dark" id="signup">Sign Up</button>
+            <p class="d-none text-danger" id="exist">This user already exists!</p>
+            <p class="d-none text-success" id="congrats">Congratulations, You've been signed up!</p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
